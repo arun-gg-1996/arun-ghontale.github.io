@@ -1,11 +1,494 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Ghontale | ML Engineer & Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Welcome to My Page!</h1>
-    <p>This is my first GitHub Pages site.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AG</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Arun Ghontale</span>
+                </h1>
+                <h2 class="hero-subtitle">ML Engineer • Software Developer • Data Scientist</h2>
+                <p class="hero-description">
+                    Master's student in Data Science at UB with 6+ years building scalable ML systems, 
+                    data pipelines, and full-stack applications. Passionate about leveraging AI to solve 
+                    real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/arun-ghontale" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/arun-ghontale" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:arungora@buffalo.edu" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://scholar.google.com" target="_blank" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-brain"></i>
+                    <span>Machine Learning</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                    <span>Software Dev</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-database"></i>
+                    <span>Data Engineering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Master's student in Data Science at the University at Buffalo (GPA: 4.0/4.0) 
+                        with a passion for building intelligent systems that scale. With 6+ years of experience 
+                        spanning ML engineering, software development, and data engineering, I've architected 
+                        end-to-end solutions that have processed millions of transactions, reduced operational 
+                        costs by 85%, and generated significant revenue.
+                    </p>
+                    <p>
+                        My journey spans from building NLP pipelines for pharmaceutical companies to deploying 
+                        real-time ML systems for healthcare, fintech, and social media platforms. I thrive at 
+                        the intersection of research and production, turning cutting-edge ML research into 
+                        scalable, production-ready systems.
+                    </p>
+                    <p>
+                        Currently, I'm exploring advanced topics in deep learning, distributed systems, and MLOps 
+                        while seeking opportunities in ML Engineering, Data Engineering, Software Development, 
+                        and Data Science roles where I can drive impact at scale.
+                    </p>
+                </div>
+                <div class="education-card">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="education-details">
+                            <h4>Master of Science in Data Science</h4>
+                            <p>University at Buffalo, SUNY</p>
+                            <span class="education-date">Jan 2025 – May 2026 | GPA: 4.0/4.0</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-details">
+                            <h4>B.Tech in Electronics & Communication</h4>
+                            <p>VIT University</p>
+                            <span class="education-date">Aug 2013 – Jun 2017 | GPA: 3.68/4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Hugging Face</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">LightGBM</span>
+                        <span class="tag">Optuna</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Transformers</span>
+                        <span class="tag">BERT</span>
+                        <span class="tag">GNNs</span>
+                        <span class="tag">GANs</span>
+                        <span class="tag">CNNs</span>
+                        <span class="tag">LSTMs</span>
+                        <span class="tag">Autoencoders</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">R</span>
+                        <span class="tag">Shell</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Apache Spark</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">Airflow</span>
+                        <span class="tag">SageMaker</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Dask</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Development & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">FAISS</span>
+                        <span class="tag">Pinecone</span>
+                        <span class="tag">Weaviate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mar 2019 – Nov 2024</span>
+                        <h3>Software Engineer 2</h3>
+                        <h4>Zignite Labs • Bengaluru, India</h4>
+                        <ul class="experience-highlights">
+                            <li>Delivered full-stack and ML development across multiple client projects managing complete project lifecycle; contributed to company recognition as <strong>"Top 50 Emerging Technology Developers in India"</strong> by Clutch</li>
+                            <li>Architected event-driven serverless dashboard for fintech platform reducing manual data processing by <strong>85%</strong>; built microservices using AWS Glue, Lambda, API Gateway processing <strong>50K+ daily transactions</strong> with 99.8% accuracy</li>
+                            <li>Integrated enterprise APIs with SAML2 and Okta SSO authentication supporting <strong>500+ concurrent users</strong>; orchestrated serverless middleware using AWS Step Functions and Lambda</li>
+                            <li>Developed Django backend with PeeWee ORM delivering <strong>&lt;200ms p95 latency</strong>; deployed containerized services on AWS Fargate with CloudFormation IaC</li>
+                            <li>Built core ML features for social media automation platform; developed N-gram models powering autocomplete engine with MongoDB and custom trie handling <strong>100K+ daily API calls</strong></li>
+                            <li>Implemented vector-based similarity detection using Sentence BERT with FAISS, migrated to Pinecone; integrated Stripe payment processing generating <strong>$500K+ ARR</strong></li>
+                            <li>Built real-time pose detection system using TensorFlow.js for virtual MSK care platform; reduced therapist assessment time by <strong>65%</strong></li>
+                            <li>Trained U-Net segmentation model on 2500+ annotated 3D MRI dental scans achieving <strong>94% IoU</strong>; reduced radiologist review time by <strong>83%</strong></li>
+                            <li>Built conversational AI for food ordering platform using RASA NLU achieving <strong>96% intent classification</strong> and <strong>89% entity extraction</strong></li>
+                            <li>Collaborated with Stanford faculty converting Masters courses (XCS224N, XCS224U, XCS229) to online format generating <strong>$500K+ revenue</strong> for 500+ learners</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2018 – Feb 2019</span>
+                        <h3>ML Engineer</h3>
+                        <h4>Applied AI (Now Scaler Academy) • Hyderabad, India</h4>
+                        <ul class="experience-highlights">
+                            <li>Achieved <strong>78% job placement rate</strong> for 500+ professionals transitioning to ML roles through comprehensive curriculum design</li>
+                            <li>Built custom Node.js grading platform reducing assessment time by <strong>60%</strong>; implemented Selenium automation addressing Google Classroom API limitations</li>
+                            <li>Managed team of 6 instructors establishing performance metrics tracking student outcomes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 2017 – Aug 2018</span>
+                        <h3>Associate Software Engineer</h3>
+                        <h4>ArisGlobal • Mysuru, India</h4>
+                        <ul class="experience-highlights">
+                            <li>Built bidirectional LSTM NER models achieving <strong>87% entity extraction accuracy</strong> for pharmacovigilance literature, reducing manual processing by <strong>30x</strong></li>
+                            <li>Orchestrated NLP pipeline processing <strong>100K+ medical documents</strong> using multi-headed LSTM and CRF models</li>
+                            <li>Led POC demonstrations to pharmaceutical clients (J&J, Pfizer, Roche) resulting in integration into LifeSphere Nava platform</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/arun-ghontale" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>AI-Powered IoT Threat Intelligence Pipeline</h3>
+                    <p class="project-description">
+                        Scalable threat detection system using Apache Spark, GCN, and RAG interface for comprehensive security analysis.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Achieved <strong>96.57% accuracy</strong> for real-time log classification with LightGBM</li>
+                        <li>Implemented GCN for node classification with <strong>98% accuracy</strong> in identifying malicious devices</li>
+                        <li>Deployed models via MCP server enabling interactive RAG interface</li>
+                        <li>Addressed data imbalance with GAN for zero-day anomaly detection</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-badge">Apache Spark</span>
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">GNN</span>
+                        <span class="tech-badge">RAG</span>
+                        <span class="tech-badge">MCP</span>
+                        <span class="tech-badge">LightGBM</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/arun-ghontale" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>EEG Pattern Recognition using Mixture of Experts</h3>
+                    <p class="project-description">
+                        Advanced EEG diagnostic system detecting 6 brain patterns with dynamic gating network and orchestrated data pipeline.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Achieved <strong>96.8% accuracy</strong> with 14.2% improvement over best individual model</li>
+                        <li>Processed 26GB EEG dataset with <strong>3200+ feature extraction</strong> across multiple domains</li>
+                        <li>Deployed on AWS EC2 with Docker and Electron.js desktop app</li>
+                        <li>Achieved <strong>98.4% seizure sensitivity</strong> for clinical diagnostic support</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">AWS EC2</span>
+                        <span class="tech-badge">Airflow</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Electron.js</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/arun-ghontale" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Semantic Text Matching Engine</h3>
+                    <p class="project-description">
+                        High-performance semantic similarity engine comparing Siamese LSTM and XGBoost with optimized vector search.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Siamese LSTM achieved <strong>AU-ROC of 0.86</strong> vs 0.81 for XGBoost</li>
+                        <li>Implemented feature extraction using Word2Vec, Levenshtein distance, and word sharing metrics</li>
+                        <li>Stored embeddings in FAISS index achieving <strong>25% reduction in search time</strong></li>
+                        <li>Optimized query performance with efficient vector similarity search</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-badge">Siamese LSTM</span>
+                        <span class="tech-badge">XGBoost</span>
+                        <span class="tech-badge">Word2Vec</span>
+                        <span class="tech-badge">FAISS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3>Lesion Border Detection using CNN</h3>
+                        <p class="publication-venue">ICCI Springer 2017, IIT Kanpur</p>
+                        <p class="publication-description">
+                            Developed deep learning solution for melanoma lesion detection achieving <strong>94% F1-score</strong>; 
+                            structured CNN feature extraction with SVM-RBF classification improving robustness by 15%
+                        </p>
+                        <div class="publication-meta">
+                            <span class="publication-date">
+                                <i class="far fa-calendar"></i> Dec 2017
+                            </span>
+                            <a href="https://scholar.google.com" target="_blank" class="publication-link">
+                                View Paper <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3>Heart Sound Classification using Adaptive Neural Networks</h3>
+                        <p class="publication-venue">ICSPC IEEE 2017</p>
+                        <p class="publication-description">
+                            Implemented feature extraction with Shannon Entropy and QRS peak identification for 
+                            robust heart sound classification using adaptive neural network architectures
+                        </p>
+                        <div class="publication-meta">
+                            <span class="publication-date">
+                                <i class="far fa-calendar"></i> Jul 2017
+                            </span>
+                            <a href="https://scholar.google.com" target="_blank" class="publication-link">
+                                View Paper <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">
+                I'm currently seeking opportunities in ML Engineering, Data Engineering, Software Development, 
+                and Data Science roles. Let's connect!
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:arungora@buffalo.edu" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>arungora@buffalo.edu</p>
+                </a>
+                <a href="https://linkedin.com/in/arun-ghontale" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/arun-ghontale</p>
+                </a>
+                <a href="https://github.com/arun-ghontale" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>github.com/arun-ghontale</p>
+                </a>
+                <a href="tel:+17164463727" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+1 (716) 446-3727</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Arun Ghontale. Built with passion and code.</p>
+            <div class="footer-links">
+                <a href="https://github.com/arun-ghontale" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/arun-ghontale" target="_blank">LinkedIn</a>
+                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
