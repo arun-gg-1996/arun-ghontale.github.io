@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Threat Intelligence - Arun Ghontale</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="logo">Arun Ghontale</a>
+            <ul class="nav-links">
+                <li><a href="../projects.html">Work</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="page-hero">
+        <div class="eyebrow">Machine Learning • Security • Data Engineering</div>
+        <h1 class="page-title">AI-Powered IoT<br>Threat Intelligence</h1>
+        <p class="page-subtitle">
+            Multi-tiered threat detection pipeline using Graph Neural Networks, 
+            RAG interface, and Apache Spark for comprehensive security analysis.
+        </p>
+    </section>
+
+    <!-- Project Overview -->
+    <section>
+        <div class="container">
+            <div class="content-split fade-in">
+                <div class="content-text">
+                    <h2 class="section-headline">The Challenge</h2>
+                    <p class="section-description">
+                        IoT devices are increasingly targeted by sophisticated cyber attacks, 
+                        with traditional signature-based detection systems failing to identify 
+                        zero-day threats and novel attack patterns. Organizations need real-time, 
+                        intelligent threat detection that can adapt to evolving attack vectors.
+                    </p>
+                </div>
+                <div class="content-visual">
+                    <div class="impact-stats">
+                        <div class="impact-item">
+                            <div class="impact-number">96.57%</div>
+                            <div class="impact-label">Classification Accuracy</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-number">98%</div>
+                            <div class="impact-label">Malicious Device Detection</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-headline">The Solution</h2>
+                <p class="section-description" style="max-width: 700px; margin: 20px auto 0;">
+                    Developed a scalable multi-tiered threat detection system combining traditional 
+                    machine learning with advanced deep learning architectures.
+                </p>
+            </div>
+
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Data Processing Pipeline</h3>
+                    <p class="timeline-company">Apache Spark • IoT-23 Dataset</p>
+                    <ul class="timeline-achievements">
+                        <li>Architected distributed processing pipeline using Apache Spark for scalable data ingestion</li>
+                        <li>Processed IoT-23 dataset with millions of network traffic records</li>
+                        <li>Implemented feature extraction for time-series network behavior analysis</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Real-Time Classification</h3>
+                    <p class="timeline-company">LightGBM • Gradient Boosting</p>
+                    <ul class="timeline-achievements">
+                        <li>Deployed LightGBM classifier achieving 96.57% accuracy for real-time log classification</li>
+                        <li>Optimized for low-latency prediction with sub-second response times</li>
+                        <li>Handled imbalanced dataset with careful sampling techniques</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Zero-Day Anomaly Detection</h3>
+                    <p class="timeline-company">Denoising Autoencoder • Unsupervised Learning</p>
+                    <ul class="timeline-achievements">
+                        <li>Implemented Denoising Autoencoder for unsupervised anomaly detection</li>
+                        <li>Detected novel attack patterns not seen during training</li>
+                        <li>Reduced false positive rate through ensemble methods</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Network Context Analysis</h3>
+                    <p class="timeline-company">Graph Convolutional Network</p>
+                    <ul class="timeline-achievements">
+                        <li>Built GCN for node classification achieving 98% accuracy in identifying malicious devices</li>
+                        <li>Leveraged network topology and device relationship patterns</li>
+                        <li>Incorporated temporal evolution of network connections</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Synthetic Data Generation</h3>
+                    <p class="timeline-company">Generative Adversarial Network</p>
+                    <ul class="timeline-achievements">
+                        <li>Addressed data imbalance with GAN-generated synthetic samples</li>
+                        <li>Improved model robustness across underrepresented attack types</li>
+                        <li>Validated synthetic data quality through statistical analysis</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Interactive RAG Interface</h3>
+                    <p class="timeline-company">Model Context Protocol • RAG</p>
+                    <ul class="timeline-achievements">
+                        <li>Deployed models as tools via MCP server for comprehensive analysis</li>
+                        <li>Built interactive RAG interface for security analysts</li>
+                        <li>Enabled natural language queries about threat patterns and recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Stack -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-headline">Technical Stack</h2>
+            </div>
+            <div class="projects-grid fade-in">
+                <div class="publication-card">
+                    <div class="publication-venue">Data Processing</div>
+                    <h3 class="publication-title">Apache Spark</h3>
+                    <p class="publication-description">
+                        Distributed data processing for handling massive IoT network traffic datasets 
+                        with fault tolerance and scalability.
+                    </p>
+                </div>
+                <div class="publication-card">
+                    <div class="publication-venue">Machine Learning</div>
+                    <h3 class="publication-title">PyTorch & LightGBM</h3>
+                    <p class="publication-description">
+                        Combined deep learning with gradient boosting for multi-tiered 
+                        threat detection and classification.
+                    </p>
+                </div>
+                <div class="publication-card">
+                    <div class="publication-venue">Deep Learning</div>
+                    <h3 class="publication-title">Graph Neural Networks</h3>
+                    <p class="publication-description">
+                        GCN architecture for network topology analysis and device 
+                        behavior classification in connected systems.
+                    </p>
+                </div>
+                <div class="publication-card">
+                    <div class="publication-venue">Interface</div>
+                    <h3 class="publication-title">RAG + MCP</h3>
+                    <p class="publication-description">
+                        Retrieval-Augmented Generation with Model Context Protocol for 
+                        interactive security analysis and insights.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-headline">Impact & Results</h2>
+            </div>
+            <div class="content-split fade-in">
+                <div class="content-text">
+                    <h3 class="project-title">Key Achievements</h3>
+                    <ul class="highlight-list">
+                        <li><strong>96.57% accuracy</strong> for real-time log classification with LightGBM</li>
+                        <li><strong>98% accuracy</strong> in identifying malicious devices using GCN</li>
+                        <li><strong>Zero-day detection</strong> capability through unsupervised learning</li>
+                        <li><strong>Scalable architecture</strong> processing millions of network events</li>
+                        <li><strong>Interactive analysis</strong> through RAG-powered interface</li>
+                    </ul>
+                </div>
+                <div class="content-visual">
+                    <div class="education-card">
+                        <h3 style="font-size: var(--font-size-xl); margin-bottom: 20px;">Project Timeline</h3>
+                        <div style="text-align: left;">
+                            <p style="margin-bottom: 15px;"><strong>Duration:</strong> Aug 2025 – Oct 2025</p>
+                            <p style="margin-bottom: 15px;"><strong>Role:</strong> ML Engineer & System Architect</p>
+                            <p style="margin-bottom: 15px;"><strong>Technologies:</strong> Spark, PyTorch, GNN, RAG, MCP</p>
+                            <p><strong>Status:</strong> Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; padding: 40px 0;">
+                <a href="../projects.html" class="text-link">← Back to all projects</a>
+                <a href="eeg-patterns.html" class="text-link">Next project: EEG Patterns →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <p>© 2025 Arun Ghontale. Master's in Data Science at University at Buffalo.</p>
+                    <p>ML Engineer • Software Developer • Data Scientist</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:arungora@buffalo.edu">Email</a>
+                    <a href="https://linkedin.com/in/arun-ghontale" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/arun-ghontale" target="_blank">GitHub</a>
+                    <a href="tel:+17164463727">Phone</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../nav.js"></script>
+</body>
+</html>
